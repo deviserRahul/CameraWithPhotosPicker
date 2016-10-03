@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jRI-Rc-7wC">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PhotoPicker-->
+        <scene sceneID="GS4-ZE-JG7">
+            <objects>
+                <viewController id="u6H-jb-iKL" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hTb-7i-ltc"/>
+                        <viewControllerLayoutGuide type="bottom" id="P7t-dG-huO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TyE-Qj-uIt">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1y8-x4-Nsf">
+                                <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="yGO-c2-DSh"/>
+                                    <barButtonItem systemItem="camera" id="fKu-EL-eJh">
+                                        <color key="tintColor" red="0.14245975378787878" green="0.14245975378787878" blue="0.14245975378787878" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="showImagePickerForCamera:" destination="u6H-jb-iKL" id="w5I-cD-KCt"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Pkk-3m-hGh">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1y8-x4-Nsf" firstAttribute="trailing" secondItem="TyE-Qj-uIt" secondAttribute="trailing" id="GmF-XP-3tB"/>
+                            <constraint firstItem="Pkk-3m-hGh" firstAttribute="leading" secondItem="TyE-Qj-uIt" secondAttribute="leading" id="QdI-ZO-MSy"/>
+                            <constraint firstItem="1y8-x4-Nsf" firstAttribute="bottom" secondItem="TyE-Qj-uIt" secondAttribute="bottom" id="ZgQ-wr-TVa"/>
+                            <constraint firstItem="1y8-x4-Nsf" firstAttribute="leading" secondItem="TyE-Qj-uIt" secondAttribute="leading" id="agw-HI-vW8"/>
+                            <constraint firstItem="1y8-x4-Nsf" firstAttribute="top" secondItem="Pkk-3m-hGh" secondAttribute="bottom" id="kZ5-1w-aWi"/>
+                            <constraint firstItem="Pkk-3m-hGh" firstAttribute="top" secondItem="TyE-Qj-uIt" secondAttribute="top" id="lkk-hg-JKX"/>
+                            <constraint firstItem="Pkk-3m-hGh" firstAttribute="trailing" secondItem="TyE-Qj-uIt" secondAttribute="trailing" id="rbN-dj-cBE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PhotoPicker" id="JvC-kc-ipg"/>
+                    <connections>
+                        <outlet property="imageView" destination="Pkk-3m-hGh" id="sLN-xS-y6e"/>
+                        <outlet property="toolBar" destination="1y8-x4-Nsf" id="ETW-ko-89F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4EN-3z-yLd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="114"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="281-RM-eJC">
+            <objects>
+                <navigationController id="jRI-Rc-7wC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="qXo-YE-IG1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="u6H-jb-iKL" kind="relationship" relationship="rootViewController" id="tm3-Rp-mjt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JXH-AF-ftw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="114"/>
+        </scene>
+    </scenes>
+</document>

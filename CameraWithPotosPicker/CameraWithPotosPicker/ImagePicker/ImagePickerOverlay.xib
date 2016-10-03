@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="btnCancel" destination="DwI-l0-wHW" id="Bg7-U6-Lnr"/>
+                <outlet property="btnOk" destination="VoY-zR-Aft" id="Zom-G6-b6I"/>
+                <outlet property="btnOpenGallery" destination="pXl-zT-nX6" id="ycX-hS-Y92"/>
+                <outlet property="btnTakePhoto" destination="Hwy-S6-auZ" id="UTQ-0y-ZOV"/>
+                <outlet property="overlayView" destination="cyR-Dv-RMw" id="mbi-Jv-EKy"/>
+                <outlet property="viewCollectionGallery" destination="M1a-Jr-ma8" id="Ppe-qJ-Pbd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cyR-Dv-RMw">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRz-JL-6xQ" userLabel="Buttons">
+                    <rect key="frame" x="0.0" y="540" width="600" height="60"/>
+                    <subviews>
+                        <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lry-cq-z9q">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hwy-S6-auZ">
+                            <rect key="frame" x="270" y="0.0" width="60" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="HOu-To-24K"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" image="icon_camera_click.png"/>
+                            <connections>
+                                <action selector="sel_btnTakePhoto:" destination="-1" eventType="touchUpInside" id="vlU-ZH-jXQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DwI-l0-wHW">
+                            <rect key="frame" x="7" y="0.0" width="60" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="erG-aV-j7c"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="sel_btnCancel:" destination="-1" eventType="touchUpInside" id="HAz-Qb-h4b"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoY-zR-Aft">
+                            <rect key="frame" x="530" y="0.0" width="60" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="k7m-n2-Mhl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                            <state key="normal" title="OK">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="disabled">
+                                <color key="titleColor" red="0.81960791349999995" green="0.81960791349999995" blue="0.81960791349999995" alpha="0.5" colorSpace="deviceRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="sel_btnOK:" destination="-1" eventType="touchUpInside" id="YRA-jJ-zHc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Lry-cq-z9q" firstAttribute="width" secondItem="zRz-JL-6xQ" secondAttribute="width" id="4vw-oQ-Osa"/>
+                        <constraint firstItem="Hwy-S6-auZ" firstAttribute="height" secondItem="zRz-JL-6xQ" secondAttribute="height" id="EkR-7A-L4r"/>
+                        <constraint firstItem="Hwy-S6-auZ" firstAttribute="centerY" secondItem="zRz-JL-6xQ" secondAttribute="centerY" id="Evc-zP-ciN"/>
+                        <constraint firstItem="Lry-cq-z9q" firstAttribute="height" secondItem="zRz-JL-6xQ" secondAttribute="height" id="JVn-dr-Xkw"/>
+                        <constraint firstItem="DwI-l0-wHW" firstAttribute="leading" secondItem="zRz-JL-6xQ" secondAttribute="leading" constant="7" id="P8o-Pp-OE3"/>
+                        <constraint firstItem="VoY-zR-Aft" firstAttribute="height" secondItem="zRz-JL-6xQ" secondAttribute="height" id="aR7-R5-PnK"/>
+                        <constraint firstAttribute="height" constant="60" id="cP5-TY-wzG"/>
+                        <constraint firstItem="DwI-l0-wHW" firstAttribute="centerY" secondItem="zRz-JL-6xQ" secondAttribute="centerY" id="di5-nU-Fth"/>
+                        <constraint firstItem="VoY-zR-Aft" firstAttribute="centerY" secondItem="zRz-JL-6xQ" secondAttribute="centerY" id="gBg-mD-ypI"/>
+                        <constraint firstItem="Hwy-S6-auZ" firstAttribute="centerX" secondItem="zRz-JL-6xQ" secondAttribute="centerX" id="iYW-Qf-3dc"/>
+                        <constraint firstItem="DwI-l0-wHW" firstAttribute="height" secondItem="zRz-JL-6xQ" secondAttribute="height" id="ikp-Ar-RZW"/>
+                        <constraint firstItem="Lry-cq-z9q" firstAttribute="centerX" secondItem="zRz-JL-6xQ" secondAttribute="centerX" id="pTs-rv-1Cq"/>
+                        <constraint firstAttribute="trailing" secondItem="VoY-zR-Aft" secondAttribute="trailing" constant="10" id="qhV-KH-zb6"/>
+                        <constraint firstItem="Lry-cq-z9q" firstAttribute="centerY" secondItem="zRz-JL-6xQ" secondAttribute="centerY" id="uwx-7w-Zzf"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="M1a-Jr-ma8">
+                    <rect key="frame" x="0.0" y="460" width="600" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="KpP-Tu-Jn2"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="wk7-Ot-VRD">
+                        <size key="itemSize" width="75" height="75"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="J5R-Oq-iM3"/>
+                        <outlet property="delegate" destination="-1" id="LAH-OO-1fR"/>
+                    </connections>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXl-zT-nX6">
+                    <rect key="frame" x="545" y="5" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Vrb-Wq-mkd"/>
+                        <constraint firstAttribute="height" constant="50" id="zaD-eA-Qsr"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="icon_gallery.png"/>
+                    <connections>
+                        <action selector="sel_openGallery:" destination="-1" eventType="touchUpInside" id="Tc6-wB-vcz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zRz-JL-6xQ" secondAttribute="trailing" id="0bt-t3-624"/>
+                <constraint firstAttribute="bottom" secondItem="pXl-zT-nX6" secondAttribute="bottom" constant="5" id="0hF-T6-TTR"/>
+                <constraint firstItem="zRz-JL-6xQ" firstAttribute="width" secondItem="cyR-Dv-RMw" secondAttribute="width" id="BHa-NL-QK2"/>
+                <constraint firstItem="pXl-zT-nX6" firstAttribute="top" secondItem="cyR-Dv-RMw" secondAttribute="top" constant="10" id="Chd-yN-62m"/>
+                <constraint firstItem="pXl-zT-nX6" firstAttribute="top" secondItem="cyR-Dv-RMw" secondAttribute="top" constant="5" id="KDM-9x-Tuo"/>
+                <constraint firstAttribute="bottom" secondItem="zRz-JL-6xQ" secondAttribute="bottom" id="LQR-QY-sRy"/>
+                <constraint firstItem="zRz-JL-6xQ" firstAttribute="leading" secondItem="cyR-Dv-RMw" secondAttribute="leading" id="j9g-AX-RxC"/>
+                <constraint firstItem="M1a-Jr-ma8" firstAttribute="width" secondItem="cyR-Dv-RMw" secondAttribute="width" id="jLM-Qp-WxB"/>
+                <constraint firstItem="zRz-JL-6xQ" firstAttribute="top" secondItem="M1a-Jr-ma8" secondAttribute="bottom" id="pHU-Hf-OYu"/>
+                <constraint firstAttribute="trailing" secondItem="pXl-zT-nX6" secondAttribute="trailing" constant="5" id="td1-03-3qB"/>
+                <constraint firstItem="M1a-Jr-ma8" firstAttribute="centerX" secondItem="cyR-Dv-RMw" secondAttribute="centerX" id="xfM-yq-L3i"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="0hF-T6-TTR"/>
+                    <exclude reference="Chd-yN-62m"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_camera_click.png" width="100" height="100"/>
+        <image name="icon_gallery.png" width="100" height="100"/>
+    </resources>
+</document>

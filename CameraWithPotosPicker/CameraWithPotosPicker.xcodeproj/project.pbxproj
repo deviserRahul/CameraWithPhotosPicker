@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9E868391D9784F70024086D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E868381D9784F70024086D /* main.m */; };
+		A9E8683C1D9784F70024086D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E8683B1D9784F70024086D /* AppDelegate.m */; };
+		A9E8683F1D9784F70024086D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E8683E1D9784F70024086D /* ViewController.m */; };
+		A9E868421D9784F70024086D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E868401D9784F70024086D /* Main.storyboard */; };
+		A9E868441D9784F70024086D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9E868431D9784F70024086D /* Assets.xcassets */; };
+		A9E868471D9784F70024086D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E868451D9784F70024086D /* LaunchScreen.storyboard */; };
+		A9E8684F1D97857A0024086D /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E8684E1D97857A0024086D /* Photos.framework */; };
+		A9E868541D9786580024086D /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E868521D9786580024086D /* ImageCollectionViewCell.m */; };
+		A9E868551D9786580024086D /* ImagePickerOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9E868531D9786580024086D /* ImagePickerOverlay.xib */; };
+		A9E868591D9789EB0024086D /* icon_camera_click.png in Resources */ = {isa = PBXBuildFile; fileRef = A9E868571D9789EB0024086D /* icon_camera_click.png */; };
+		A9E8685A1D9789EB0024086D /* icon_gallery.png in Resources */ = {isa = PBXBuildFile; fileRef = A9E868581D9789EB0024086D /* icon_gallery.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A9E868341D9784F70024086D /* CameraWithPotosPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraWithPotosPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9E868381D9784F70024086D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9E8683A1D9784F70024086D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A9E8683B1D9784F70024086D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A9E8683D1D9784F70024086D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A9E8683E1D9784F70024086D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A9E868411D9784F70024086D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9E868431D9784F70024086D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9E868461D9784F70024086D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9E868481D9784F70024086D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9E8684E1D97857A0024086D /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		A9E868511D9786580024086D /* ImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewCell.h; sourceTree = "<group>"; };
+		A9E868521D9786580024086D /* ImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewCell.m; sourceTree = "<group>"; };
+		A9E868531D9786580024086D /* ImagePickerOverlay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagePickerOverlay.xib; sourceTree = "<group>"; };
+		A9E868571D9789EB0024086D /* icon_camera_click.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_camera_click.png; path = CameraWithPotosPicker/icon_camera_click.png; sourceTree = "<group>"; };
+		A9E868581D9789EB0024086D /* icon_gallery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_gallery.png; path = CameraWithPotosPicker/icon_gallery.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9E868311D9784F70024086D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E8684F1D97857A0024086D /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9E8682B1D9784F70024086D = {
+			isa = PBXGroup;
+			children = (
+				A9E868561D9789E10024086D /* images */,
+				A9E8684E1D97857A0024086D /* Photos.framework */,
+				A9E868361D9784F70024086D /* CameraWithPotosPicker */,
+				A9E868351D9784F70024086D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9E868351D9784F70024086D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9E868341D9784F70024086D /* CameraWithPotosPicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9E868361D9784F70024086D /* CameraWithPotosPicker */ = {
+			isa = PBXGroup;
+			children = (
+				A9E8683A1D9784F70024086D /* AppDelegate.h */,
+				A9E8683B1D9784F70024086D /* AppDelegate.m */,
+				A9E8683D1D9784F70024086D /* ViewController.h */,
+				A9E8683E1D9784F70024086D /* ViewController.m */,
+				A9E868401D9784F70024086D /* Main.storyboard */,
+				A9E868431D9784F70024086D /* Assets.xcassets */,
+				A9E868451D9784F70024086D /* LaunchScreen.storyboard */,
+				A9E868481D9784F70024086D /* Info.plist */,
+				A9E868501D9786580024086D /* ImagePicker */,
+				A9E868371D9784F70024086D /* Supporting Files */,
+			);
+			path = CameraWithPotosPicker;
+			sourceTree = "<group>";
+		};
+		A9E868371D9784F70024086D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9E868381D9784F70024086D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9E868501D9786580024086D /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				A9E868511D9786580024086D /* ImageCollectionViewCell.h */,
+				A9E868521D9786580024086D /* ImageCollectionViewCell.m */,
+				A9E868531D9786580024086D /* ImagePickerOverlay.xib */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		A9E868561D9789E10024086D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A9E868571D9789EB0024086D /* icon_camera_click.png */,
+				A9E868581D9789EB0024086D /* icon_gallery.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9E868331D9784F70024086D /* CameraWithPotosPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9E8684B1D9784F70024086D /* Build configuration list for PBXNativeTarget "CameraWithPotosPicker" */;
+			buildPhases = (
+				A9E868301D9784F70024086D /* Sources */,
+				A9E868311D9784F70024086D /* Frameworks */,
+				A9E868321D9784F70024086D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CameraWithPotosPicker;
+			productName = CameraWithPotosPicker;
+			productReference = A9E868341D9784F70024086D /* CameraWithPotosPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9E8682C1D9784F70024086D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = rpant;
+				TargetAttributes = {
+					A9E868331D9784F70024086D = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 973C468HA4;
+					};
+				};
+			};
+			buildConfigurationList = A9E8682F1D9784F70024086D /* Build configuration list for PBXProject "CameraWithPotosPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9E8682B1D9784F70024086D;
+			productRefGroup = A9E868351D9784F70024086D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9E868331D9784F70024086D /* CameraWithPotosPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9E868321D9784F70024086D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E868471D9784F70024086D /* LaunchScreen.storyboard in Resources */,
+				A9E868591D9789EB0024086D /* icon_camera_click.png in Resources */,
+				A9E868441D9784F70024086D /* Assets.xcassets in Resources */,
+				A9E8685A1D9789EB0024086D /* icon_gallery.png in Resources */,
+				A9E868551D9786580024086D /* ImagePickerOverlay.xib in Resources */,
+				A9E868421D9784F70024086D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9E868301D9784F70024086D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E8683F1D9784F70024086D /* ViewController.m in Sources */,
+				A9E8683C1D9784F70024086D /* AppDelegate.m in Sources */,
+				A9E868541D9786580024086D /* ImageCollectionViewCell.m in Sources */,
+				A9E868391D9784F70024086D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A9E868401D9784F70024086D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9E868411D9784F70024086D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9E868451D9784F70024086D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9E868461D9784F70024086D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9E868491D9784F70024086D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9E8684A1D9784F70024086D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9E8684C1D9784F70024086D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 973C468HA4;
+				INFOPLIST_FILE = CameraWithPotosPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rp.CameraWithPotosPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A9E8684D1D9784F70024086D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 973C468HA4;
+				INFOPLIST_FILE = CameraWithPotosPicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rp.CameraWithPotosPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9E8682F1D9784F70024086D /* Build configuration list for PBXProject "CameraWithPotosPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9E868491D9784F70024086D /* Debug */,
+				A9E8684A1D9784F70024086D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9E8684B1D9784F70024086D /* Build configuration list for PBXNativeTarget "CameraWithPotosPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9E8684C1D9784F70024086D /* Debug */,
+				A9E8684D1D9784F70024086D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9E8682C1D9784F70024086D /* Project object */;
+}
